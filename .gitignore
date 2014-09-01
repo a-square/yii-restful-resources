@@ -1,0 +1,10 @@
+# backups etc.
+*~
+.*.sw*
+\#*\#
+
+# IDE and editors settings
+.project
+.settings
+.vimrc
+.idea

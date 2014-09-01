@@ -1,0 +1,13 @@
+{
+    "name": "kallikanzarid/yii-restful-resources",
+    "type": "library",
+    "description": "RESTful URL routes support for Yii 1.1 using convention over configuration",
+    "homepage": "http://wiki2.lbc.ru/wiki/Yii/rest",
+    "autoload": {
+        "psr-0": {"Lightsoft\\REST\\": "lib"}
+    },
+    "require": {
+        "php": ">=5.3.0",
+        "yiisoft/yii": ">=1.1.13"
+    }
+}
