@@ -46,21 +46,21 @@ All paths may optionally end with `/`, it is ignored. Query string parameters ar
 #### Plural resource
 
 Verb   | Path                | Action ID             | Action method signature
------------------------------------------------------------------------------------------------------------------
+-------|---------------------|-----------------------|-----------------------------------------------------------
 GET    | /api/echoes         | api/echoes/index      | `EchoesController::actionIndex()`
 GET    | /api/echoes/:id     | api/echoes/view       | `EchoesController::actionView($id [= :id])`
 POST   | /api/echoes         | api/echoes/create     | `EchoesController::actionView($id [= :id])`
 PUT    | /api/echoes/:id     | api/echoes/update     | `EchoesController::actionUpdate($id [= $id])`
 DELETE | /api/echoes/:id     | api/echoes/destroy    | `EchoesController::actionDestroy($id [= $id])`
------------------------------------------------------------------------------------------------------------------
+-------|---------------------|-----------------------|-----------------------------------------------------------
 GET    | /api/echoes/:id/foo | api/echoes/viewFoo    | `EchoesController::actionViewFoo($id [= $id])`
 PUT    | /api/echoes/:id/foo | api/echoes/updateFoo  | `EchoesController::actionUpdateFoo($id [= $id])`
 DELETE | /api/echoes/:id/foo | api/echoes/destroyFoo | `EchoesController::actionDestroyFoo($id [= $id])`
 
 #### Singular resource
 
-Verb | Path | Action ID | Action method signature
-------------------------------------------------------------------------------------------------------------------
+Verb   | Path                | Action ID             | Action method signature
+-------|---------------------|-----------------------|------------------------------------------------------------
 GET    | /api/echo           | api/echo/view         | `EchoController::actionView()`
 POST   | /api/echo           | api/echo/create       | `EchoController::actionCreate()`
 PUT    | /api/echo           | api/echo/update       | `EchoController::actionUpdate()`
